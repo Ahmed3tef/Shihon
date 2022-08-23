@@ -1,5 +1,42 @@
 //// HEADER ////
+///
 
+.header {
+  &__heading {
+    &--sub {
+      font-size: 4.8rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+    &--main {
+      font-size: 6rem;
+      font-weight: 800;
+      margin-bottom: 3.5rem;
+    }
+  }
+}
+
+.navbar {
+  color: $color-white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  &__main {
+    width: 100%;
+    display: flex;
+  }
+  &__mini {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 //// SECTIONS ////
 
 .sections {
@@ -129,7 +166,7 @@
     background-color: $color-white;
     min-width: 8.6rem;
     min-height: 8.5rem;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: $shadow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,6 +209,32 @@
     }
   }
   &__search {
+    width: 100%;
+    padding: 1rem 2rem;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: $shadow;
+    transition: all 0.5s;
+    &:hover {
+      border-color: $color-black;
+    }
+    input {
+      outline: none;
+      border: none;
+      width: 90%;
+      &::placeholder {
+        font-size: 1.5rem;
+        color: $color-placeholder;
+      }
+    }
+  }
+  &__contact {
+    p {
+      margin-bottom: 1.5rem;
+    }
   }
   &__social {
     display: flex;
@@ -185,7 +248,11 @@
       justify-content: center;
       align-items: center;
       margin-left: 1rem;
-
+      transition: all 0.3s;
+      &:hover {
+        box-shadow: $shadow-darker;
+        transform: translateY(-4px);
+      }
       &.twitter {
         background-color: #2ac5f4;
       }
