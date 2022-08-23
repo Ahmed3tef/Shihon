@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shihon | شيهون</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -14,65 +18,216 @@
   </head>
 
   <body>
-    <div class="header">
 
-      <!-- Carousel container -->
-      <div id="my-pics" class="carousel slide" data-ride="carousel">
+    <header class="header">
+      <div class="container">
 
+        <div class="nav__mini">
+          <div class="nav__mini--links">
+            <span>تابعنا علي</span>
+            <a href="#" class="nav__mini--link">
+              <i class="fab fa-snapchat-ghost"></i>
 
+            </a>
+            <a href="#" class="nav__mini--link">
 
-        <!-- Content -->
-        <div class="carousel-inner" role="listbox">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="nav__mini--link">
 
-          <!-- Slide 1 -->
-          <div class="item active">
-            <img src="imgs/carousel-1.jpg" alt="Sunset over beach">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="nav__mini--link">
+              <i class="fab fa-facebook-f"></i>
+
+            </a>
           </div>
-
-          <!-- Slide 2 -->
-          <div class="item">
-            <img src="imgs/carousel-2.jpg" alt="Rob Roy Glacier">
+          <div class="nav__mini--options">
+            <div class="dropdown nav__mini--options-currency">
+              <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                الريال السعودي
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">الدرهم الاماراتي</a>
+                <a class="dropdown-item" href="#">الجنيه المصري</a>
+                <a class="dropdown-item" href="#">الدينار الكويتي</a>
+              </div>
+            </div>
+            <div class="dropdown nav__mini--options-lang">
+              <button type="button" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                العربية
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">English</a>
+              </div>
+            </div>
+            <button type="button" class="nav__mini--options-needhelp">هل تحتاج مساعدة؟
+            </button>
           </div>
-
-          <!-- Slide 3 -->
-          <div class="item">
-            <img src="imgs/carousel-3.jpg" alt="Longtail boats at Phi Phi">
-          </div>
-
         </div>
-        <div class="header__overlay">
+        <nav class="nav__main">
+          <a href="#" class="logo">
+            <img src="imgs/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <img src="imgs/header-overlay.png" alt="" class="header__overlay-img ">
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav__main--menu">
+              <li class="nav__main--item">
+                <a class="nav__main--link" href="#">الرئيسية</a>
+              </li>
+              <li class="nav__main--item">
+                <a class="nav__main--link" href="#">من نحن</a>
+              </li>
+              <li class="nav__main--item">
+                <a class="nav__main--link" href="#">الأثاث</a>
+              </li>
+              <li class="nav__main--item">
+                <a class="nav__main--link" href="#">الإكسسوارات</a>
+              </li>
+              <li class="nav__main--item">
+                <a class="nav__main--link" href="#">شنط السفر</a>
+              </li>
+              <li class="nav__main--item">
+                <a class="nav__main--link" href="#">العروض</a>
+              </li>
+              <li class="nav__main--item">
+                <a class="nav__main--link" href="#">وصل حديثا</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+      <!-- SECTIONS -->
+
+      <section class="sections">
+        <div class="container-fluid">
+          <div class="row ">
+            <div class="col-6 section p-0">
+              <img src="imgs/bed.jpg" alt="" class="img-fluid">
+              <div class="section__text">
+                <h2 class="section__heading">الآثاث المنزلي</h2>
+                <a href="#" class="btn-buy">تسوق الآن</a>
+              </div>
+            </div>
+            <div class="col-6 section p-0">
+              <img src="imgs/desk.jpg" alt="" class="img-fluid">
+              <div class="section__text">
+                <h2 class="section__heading">الآثاث المكتبي</h2>
+                <a href="#" class="btn-buy">تسوق الآن</a>
+              </div>
+            </div>
+            <div class="col-6 section p-0">
+              <img src="imgs/accessories.jpg" alt="" class="img-fluid">
+              <div class="section__text">
+                <h2 class="section__heading">الإكسسوارات</h2>
+                <a href="#" class="btn-buy">تسوق الآن</a>
+              </div>
+            </div>
+            <div class="col-6 section p-0">
+              <img src="imgs/bag.jpg" alt="" class="img-fluid">
+              <div class="section__text">
+                <h2 class="section__heading">شنط السفر </h2>
+                <a href="#" class="btn-buy">تسوق الآن</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mostViewed text-center">
+        <div class="container">
+          <h3 class="heading__tertiary">
+            المنتجات الأكثر مشاهدة
+          </h3>
+          <div class="row">
+            <div class="col-4 col-md-3">
+              <div class="product">
+                <div class="product__img">
+                  <img src="imgs/product-1" alt="">
+                </div>
+                <div class="product__info">
+                  <span class="product__info--name">اسم منتج تجريبي</span>
+                  <div class="product__info--rate">
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star fill"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="product__info--price">
+                    <span class="product__info--price-new">299 ريال</span>
+                    <span class="product__info--price-old">350 ريال</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#my-pics" data-slide-to="0" class="active"></li>
-          <li data-target="#my-pics" data-slide-to="1"></li>
-          <li data-target="#my-pics" data-slide-to="2"></li>
-        </ol>
+      </section>
+    </main>
 
-        <!-- Previous/Next controls -->
-        <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
-          <span class=" " aria-hidden=""><span class="lnr lnr-chevron-left"></span></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
-          <span class="" aria-hidden="true"><span class="lnr lnr-chevron-right"></span></span>
-          <span class="sr-only">Next</span>
-        </a>
+
+
+
+
+    <!-- Carousel contain
+
+      <ol class="carousel-indicators">
+        <li data-target="#my-pics" data-slide-to="0" class="active"></li>
+        <li data-target="#my-pics" data-slide-to="1"></li>
+        <li data-target="#my-pics" data-slide-to="2"></li>
+      </ol>
+
+
+      <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+          <img src="imgs/carousel-1.jpg" alt="Sunset over beach" class="img-responsive">
+        </div>
+
+        <div class="item">
+          <img src="imgs/carousel-2.jpg" alt="Rob Roy Glacier" class="img-responsive">
+        </div>
+
+        <div class="item">
+          <img src="imgs/carousel-3.jpg" alt="Longtail boats at Phi Phi" class="img-responsive">
+        </div>
 
       </div>
 
-    </div>
 
 
 
-    <script src="js/jQuery.min.js"></script>
+      <a class="left carousel-control" href="#my-pics" role="button" data-slide="prev">
+        <span aria-hidden=""><span class="lnr lnr-chevron-left"></span></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#my-pics" role="button" data-slide="next">
+        <span class="" aria-hidden="true"><span class="lnr lnr-chevron-right"></span></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div> -->
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 
-    <script>
+    <!-- <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       })
@@ -81,7 +236,7 @@
       $(function () {
         $('[data-toggle="popover"]').popover()
       })  
-    </script>
+    </script> -->
   </body>
 
 </html>

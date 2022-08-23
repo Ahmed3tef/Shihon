@@ -1,0 +1,37 @@
+.btn-buy {
+  font-size: 1.7rem;
+  font-weight: 500;
+  padding: 0.3em 1.3em;
+  border: 2px solid $color-white;
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  &__img {
+    img {
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    &--name {
+    }
+    &--rate {
+      i {
+      }
+      .fill {
+      }
+    }
+    &--price {
+      &-new {
+      }
+      &-old {
+      }
+    }
+  }
+}
