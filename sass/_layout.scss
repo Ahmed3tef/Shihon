@@ -17,7 +17,7 @@
 }
 
 .navbar {
-  color: $color-white;
+  color: $color-miniNav;
   position: absolute;
   top: 0;
   left: 0;
@@ -32,11 +32,51 @@
   }
   &__mini {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-bottom: 1px solid $color-nav-border;
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &--options {
+      display: flex;
+      align-items: center;
+
+      .dropdown {
+        margin-left: 3rem;
+
+        & > button {
+          color: $color-miniNav;
+          font-size: 1.4rem;
+        }
+      }
+
+      &-needhelp {
+        font-size: 1.4rem;
+        color: $color-miniNav;
+        padding-right: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        border-right: 1px solid $color-nav-border;
+      }
+    }
+    &--links {
+      span {
+        font-size: 1.4rem;
+      }
+    }
+    &--link {
+      margin-right: 2rem;
+      font-size: 1.5rem;
+      transition: all 0.3s;
+      &:hover {
+        color: $color-white;
+      }
+    }
   }
 }
+
 //// SECTIONS ////
 
 .sections {

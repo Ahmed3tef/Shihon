@@ -232,7 +232,7 @@ a:visited {
 }
 
 .navbar {
-  color: #fff;
+  color: #bfbfbf;
   position: absolute;
   top: 0;
   left: 0;
@@ -247,9 +247,42 @@ a:visited {
 }
 .nav__mini {
   width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.149);
+}
+.nav__mini-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav__mini--options {
+  display: flex;
+  align-items: center;
+}
+.nav__mini--options .dropdown {
+  margin-left: 3rem;
+}
+.nav__mini--options .dropdown > button {
+  color: #bfbfbf;
+  font-size: 1.4rem;
+}
+.nav__mini--options-needhelp {
+  font-size: 1.4rem;
+  color: #bfbfbf;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.149);
+}
+.nav__mini--links span {
+  font-size: 1.4rem;
+}
+.nav__mini--link {
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.nav__mini--link:hover {
+  color: #fff;
 }
 
 .sections .section {
