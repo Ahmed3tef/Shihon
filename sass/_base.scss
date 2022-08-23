@@ -61,3 +61,17 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
+
+.heading {
+  &__tertiary {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 3.5rem;
+  }
+}
+
+.products {
+  .row {
+    row-gap: 2.5rem;
+  }
+}
