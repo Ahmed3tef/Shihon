@@ -22,20 +22,20 @@
       content: '';
       width: 100%;
       height: 60%;
-      background-image: linear-gradient(
-        to top,
-        $color-overlay-light,
-        transparent
-      );
+      background-image: none;
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 4;
-      display: none;
+      transition: all 0.3s;
     }
     &:hover {
       &::before {
-        display: block;
+        background-image: linear-gradient(
+          to top,
+          $color-overlay-light,
+          transparent
+        );
       }
     }
 
@@ -105,6 +105,119 @@
       font-weight: 700;
       font-size: 3.8rem;
       margin-bottom: 3.3rem;
+    }
+  }
+}
+
+.features {
+  padding: 6rem 0;
+  background-color: $color-features-bg;
+  .row {
+    row-gap: 1.5rem;
+  }
+}
+.feature {
+  display: flex;
+  text-align: start;
+  align-items: center;
+  @media (max-width: 991px) {
+    flex-direction: column;
+    text-align: center;
+  }
+  &__icon {
+    border-radius: 50%;
+    background-color: $color-white;
+    min-width: 8.6rem;
+    min-height: 8.5rem;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+
+    @media (max-width: 991px) {
+      margin-bottom: 1.5rem;
+    }
+
+    .lnr {
+      font-size: 3.6rem;
+      font-weight: 400;
+    }
+  }
+  &__text {
+  }
+}
+
+.footer {
+  padding: 10rem 0 4.5rem 0;
+  text-align: start;
+
+  &__links {
+    &--heading {
+      font-weight: 700;
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+    }
+  }
+  &__menu {
+    &--link {
+      color: $color-footer-links;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      transition: all 0.3s;
+      &:hover {
+        color: $color-footer-links-hover;
+        padding-right: 5px;
+      }
+    }
+  }
+  &__search {
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+
+    &--link {
+      width: 4.2rem;
+      height: 4.2rem;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1rem;
+
+      &.twitter {
+        background-color: #2ac5f4;
+      }
+      &.facebook {
+        background-color: #3a5a97;
+      }
+      &.snapchat {
+        background-color: #f7cb00;
+      }
+      &.instagram {
+        background-image: linear-gradient(
+          to left bottom,
+          #8c39b8,
+          #dc515c,
+          #f38c4f
+        );
+      }
+      i {
+        color: $color-white;
+        font-size: 1.8rem;
+      }
+    }
+  }
+  &__copyright {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+  }
+  &__brands {
+    text-align: center;
+    margin-top: 3rem;
+    img + img {
+      margin-right: 2.5rem;
     }
   }
 }
