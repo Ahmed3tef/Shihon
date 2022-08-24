@@ -26,10 +26,44 @@
   flex-direction: column;
 }
 .nav {
+  // main
   &__main {
     width: 100%;
-    display: flex;
+    color: $color-white;
+    &-content {
+      display: flex;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+    }
+
+    &--menu {
+      display: flex;
+      li + li {
+        margin-right: 2.5rem;
+      }
+    }
+    &--item {
+    }
+    &--link {
+      font-size: 1.7rem;
+    }
+    &--icons {
+      display: flex;
+      li + li {
+        margin-right: 3.5rem;
+      }
+      .lnr {
+        font-size: 2.2rem;
+        font-weight: 400;
+      }
+    }
   }
+
+  // mini navbar
   &__mini {
     width: 100%;
     border-bottom: 1px solid $color-nav-border;
@@ -229,6 +263,9 @@
   padding: 10rem 0 4.5rem 0;
   text-align: start;
 
+  .row {
+    row-gap: 2rem;
+  }
   &__links {
     &--heading {
       font-weight: 700;

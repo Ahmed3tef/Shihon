@@ -13,7 +13,6 @@
   width: 8px;
   height: 8px;
 }
-
 .carousel-control-next, .carousel-control-prev {
   display: flex;
   align-items: center;
@@ -24,7 +23,6 @@
 .carousel-control-next .lnr, .carousel-control-prev .lnr {
   font-size: 48px;
 }
-
 .carousel-caption {
   text-align: center;
   display: flex;
@@ -67,6 +65,16 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -114,6 +122,8 @@ button {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -243,7 +253,33 @@ a:visited {
 
 .nav__main {
   width: 100%;
+  color: #fff;
+}
+.nav__main-content {
   display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__main--menu {
+  display: flex;
+}
+.nav__main--menu li + li {
+  margin-right: 2.5rem;
+}
+.nav__main--link {
+  font-size: 1.7rem;
+}
+.nav__main--icons {
+  display: flex;
+}
+.nav__main--icons li + li {
+  margin-right: 3.5rem;
+}
+.nav__main--icons .lnr {
+  font-size: 2.2rem;
+  font-weight: 400;
 }
 .nav__mini {
   width: 100%;
@@ -417,6 +453,9 @@ a:visited {
 .footer {
   padding: 10rem 0 4.5rem 0;
   text-align: start;
+}
+.footer .row {
+  row-gap: 2rem;
 }
 .footer__links--heading {
   font-weight: 700;

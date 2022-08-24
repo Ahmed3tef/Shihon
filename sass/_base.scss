@@ -10,6 +10,12 @@ html {
   font-size: 62.5%; // 1rem = 10px
   box-sizing: border-box;
   scroll-behavior: smooth;
+  @media only screen and (max-width: 1400px) {
+    font-size: 55%;
+  }
+  @media only screen and (max-width: 1200px) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -48,6 +54,8 @@ button {
 }
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 h1,
 h2,
