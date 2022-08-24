@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   &__img {
+    cursor: pointer;
     position: relative;
     width: 33rem;
     height: 33rem;
@@ -24,7 +25,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    cursor: pointer;
+
     @media (max-width: 1400px) {
       width: 23rem;
     }
