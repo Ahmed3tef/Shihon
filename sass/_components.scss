@@ -3,6 +3,7 @@
   font-weight: 500;
   padding: 0.3em 1.3em;
   border: 2px solid $color-white;
+  transition: all 0.3s;
   &:hover {
     background-color: $color-white;
     color: $color-black;
@@ -77,4 +78,22 @@
       }
     }
   }
+  // &__quick {
+  //   height: 100vh;
+  //   width: 100%;
+  //   position: absolute;
+  //   top: 12rem;
+  //   left: 0;
+  //   background-color: $color-overlay-dark;
+  //   z-index: 10;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   .content {
+  //     height: 66rem;
+  //     background-color: $color-white;
+  //     z-index: 11;
+  //     padding: 5rem;
+  //   }
+  // }
 }

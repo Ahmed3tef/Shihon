@@ -146,6 +146,11 @@
     }
     // MEGA MENU //
 
+    .mega-hover {
+      i {
+        font-size: 10px;
+      }
+    }
     .mega-hover:hover .mega {
       opacity: 1;
       visibility: visible;
@@ -362,6 +367,7 @@
 
 .products {
   padding: 10rem 0;
+  position: relative;
 }
 
 .offers {
@@ -508,7 +514,6 @@
       margin-left: 1rem;
       transition: all 0.3s;
       &:hover {
-        box-shadow: $shadow-darker;
         transform: translateY(-4px);
       }
       &.twitter {
