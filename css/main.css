@@ -176,6 +176,29 @@ a:visited {
   font-weight: 400;
   color: #808080;
 }
+.product__view {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product__view .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+.product__view .content {
+  height: 66rem;
+  background-color: #fff;
+  z-index: 11;
+  padding: 5rem;
+}
 
 .header__heading--sub {
   font-size: 4.8rem;
@@ -272,6 +295,10 @@ a:visited {
 }
 .nav__main--link {
   font-size: 1.7rem;
+  transition: all 0.3s;
+}
+.nav__main--link:hover {
+  opacity: 0.7;
 }
 .nav__main--icons {
   display: flex;
@@ -393,6 +420,10 @@ a:visited {
   color: #bfbfbf;
   font-size: 1.4rem;
 }
+.nav__mini--options .dropdown-item {
+  font-size: 1.4rem;
+  color: #000;
+}
 .nav__mini--options-needhelp {
   font-size: 1.4rem;
   color: #bfbfbf;
@@ -410,6 +441,14 @@ a:visited {
   transition: all 0.3s;
 }
 .nav__mini--link:hover {
+  color: #fff;
+}
+.nav__mini .lang-btn {
+  display: inline-block;
+  margin-left: 3rem;
+  transition: all 0.3s;
+}
+.nav__mini .lang-btn:hover {
   color: #fff;
 }
 
